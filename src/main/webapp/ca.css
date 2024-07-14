@@ -1,0 +1,250 @@
+
+ div {
+  text-align: center;
+}
+
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:900i');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: left;
+}
+
+.cta {
+    display: flex;
+    padding: 1px 10px;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    color: white;
+    background: #6225E6;
+    transition: 1s;
+    box-shadow: 6px 6px 0 black;
+    transform: skewX(-15deg);
+}
+
+.cta:focus {
+   outline: none; 
+}
+
+.cta:hover {
+    transition: 0.5s;
+    box-shadow: 10px 10px 0 #FBC638;
+}
+
+.cta span:nth-child(2) {
+    transition: 0.5s;
+    margin-right: 0px;
+}
+
+.cta:hover  span:nth-child(2) {
+    transition: 0.5s;
+    margin-right: 45px;
+}
+
+  span {
+    transform: skewX(15deg) 
+  }
+
+  span:nth-child(2) {
+    width: 10px;
+    margin-left: 20px;
+    position: relative;
+    top: 12%;
+  }
+  
+/**************SVG****************/
+
+path.one {
+    transition: 0.4s;
+    transform: translateX(-60%);
+}
+
+path.two {
+    transition: 0.5s;
+    transform: translateX(-30%);
+}
+
+.cta:hover path.three {
+    animation: color_anim 1s infinite 0.2s;
+}
+
+.cta:hover path.one {
+    transform: translateX(0%);
+    animation: color_anim 1s infinite 0.6s;
+}
+
+.cta:hover path.two {
+    transform: translateX(0%);
+    animation: color_anim 1s infinite 0.4s;
+}
+
+/* SVG animations */
+
+@keyframes color_anim {
+    0% {
+        fill: white;
+    }
+    50% {
+        fill: #FBC638;
+    }
+    100% {
+        fill: white;
+    }
+}
+
+
+
+
+.page_404{ padding:40px 0; background:#fff; font-family: 'Arvo', serif;
+}
+
+.page_404  img{ width:100%;}
+
+.four_zero_four_bg{
+ 
+ background-image: url(https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif);
+    height: 400px;
+    background-position: center;
+ }
+ 
+ 
+ .four_zero_four_bg h1{
+ font-size:80px;
+ }
+ 
+  .four_zero_four_bg h3{
+       font-size:80px;
+       }
+       
+       .link_404{      
+  color: #fff!important;
+    padding: 10px 20px;
+    background: #39ac31;
+    margin: 20px 0;
+    display: inline-block;}
+  .contant_box_404{ margin-top:-50px;}
+  
+  @keyframes blink-fancy{
+            0%, 25%, 28.33%, 45%, 48.33%, 51.67%, 93.33%, 96.67%{transform: scaleY(1);}
+            26.67%, 46.67%, 50%, 95% {transform: scaleY(0.1);}
+        }
+        
+        @keyframes flame-flicker-1{
+            25% {transform: scale3d(1,1.1,1);}
+            40% {transform: scale3d(1,0.8,1);}
+            50% {transform: scale3d(1,1.05,1);}
+            65% {transform: scale3d(1,0.75,1);}
+            75% {transform: scale3d(1,1,1);}
+            90% {transform: scale3d(1,1.15,1);}
+            100 {transform: scale3d(1,1,1);}
+        
+}
+        @keyframes flame-flicker-2{
+            15% {transform: scale3d(0.9,0.8,1);}
+            33% {transform: scale3d(1.2, 0.5,1);}
+            47% {transform: scale3d(0.7, 0.7,1);}
+            63% {transform: scale3d(0.72, 1.1,1);}
+            70% {transform: scale3d(0.65, 1,1);}
+            77% {transform: scale3d(1, 0.8,1);}
+            85% {transform: scale3d(0.7, 0.95,1)}
+            100% {transform: scale3d(1,1,1);}
+        }
+        
+        @keyframes flame-ember{
+            0% {transform: translate(0, 0) rotate(0deg);}
+            25% {transform: translate(10px, -25px) rotate(-45deg);}
+            50% {transform: translate(0, -50px) rotate(0);}
+            75% {transform: translate(-10px, -75px) rotate(45deg);}
+            100% {transform: translate(0, -100px) rotate(0);}
+        }
+        
+        @keyframes flame-ember-alt{
+            0% {transform: translate(0, 0) rotate(0deg);}
+            25% {transform: translate(-15px, -25px) rotate(45deg);}
+            50% {transform: translate(0, -50px) rotate(0);}
+            75% {transform: translate(10px, -75px) rotate(-45deg);}
+            100% {transform: translate(0, -100px) rotate(0);}
+        }
+        
+        @keyframes flame-ember-opacity{
+            45% {opacity: 1;}
+            100% {opacity: 0;}
+        }
+        
+        @keyframes scale-pulse {
+            0% {transform: scale(0.8,0.8);}
+            50% {transform: scale(1.1, 1.1);}
+            100% {transform: scale(0.8,0.8);}
+        }
+        
+        @keyframes opacity-pulse{
+            0% {opacity: 0.2;}
+            50% {opacity: 0.5;}
+            100% {opacity: 0.2;}
+        }
+        
+        .flame-front{ 
+        transform-origin: center bottom;
+        animation: flame-flicker-1 1s ease-in-out infinite;
+        }
+        
+        .flame-inner{
+            transform-origin: center bottom;
+            animation: flame-flicker-2 .8s ease-in-out infinite;
+        }
+        
+        #flame-inner-right{animation-duration: 1s; animation-delay: -1s;}
+        
+        #flame-back{animation-direction: reverse; animation-delay: 0.5s; animation-duration: 1.6s;}
+        
+        #flame-front-right{animation-duration: 1.3s; animation-delay: 0.2s}
+        
+        .emitted-ember{
+            transform-origin: center center;
+            -moz-transform-origin: 485.125px 51.33px;
+            animation: flame-ember 2s linear infinite, flame-ember-opacity 2s ease-out infinite;
+        }
+        
+        .emitted-ember-alt{
+            animation: flame-ember-alt 1.7s linear infinite, flame-ember-opacity 1.7s ease-out infinite;
+        }
+        
+        .smoke{transform-origin: center center; animation: scale-pulse .7s ease-in-out infinite;}
+        
+        #smoke-float-1 {animation-delay: 0.4s;}
+        #smoke-float-2 {animation-delay: 0.2s;}
+        #smoke-float-3 {animation-delay: 0s;}
+        #smoke-float-4 {animation-delay: -0.2s;}
+        #smoke-float-5 {animation-delay: -0.4s;}
+        
+        .glow{
+            transform-origin: center center;
+            -moz-transform-origin: 378.729px 109.75px;
+            animation: opacity-pulse 4s ease-in-out infinite 0.1s, scale-pulse 4s ease-in-out alternate infinite;
+        }
+        
+        #glow-outer-1{animation-delay: -0.1s;}
+        #glow-inner {animation-delay: -0.3s;}
+        
+        #eyes-left, #eyes-right{
+            animation: blink-fancy 6s linear infinite;
+        }
+        
+        .bill-highlight{animation: opacity-pulse 4s ease-in-out infinite;}
+
+
